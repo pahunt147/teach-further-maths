@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Teach Further Maths — superb fully animated PowerPoint presentations for teachers of A-Level Maths and Further Maths. Over 3000 slides covering all major exam boards including Edexcel, AQA, OCR and MEI.">
+<meta name="keywords" content="teach further maths, A-level further maths resources, further maths powerpoints, A-level maths teaching resources, further maths teacher resources, Edexcel further maths, AQA further maths, OCR further maths, MEI further maths, further maths presentations">
+<meta property="og:title" content="Teach Further Maths — Superb PowerPoints for A-Level Further Maths Teachers">
+<meta property="og:description" content="Over 3000 slides of fully animated A-Level Further Maths PowerPoint presentations. All major exam boards covered.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://teachfurthermaths.weebly.com/">
+<title>Teach Further Maths — Superb PowerPoints for Teachers of A-Level Maths &amp; Further Maths</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --blue:#1a3a8f;
+  --blue-mid:#2451b3;
+  --blue-light:#3b6fd4;
+  --blue-pale:#e8eef8;
+  --gold:#d4a017;
+  --gold-light:#e8b82a;
+  --white:#ffffff;
+  --off-white:#f7f8fc;
+  --ink:#1a1a2e;
+  --muted:#555570;
+  --border:#d0d8e8;
+  --bg:#f0f3fa;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Source Sans 3',sans-serif;font-weight:400;color:var(--ink);background:var(--white);line-height:1.65;}
+
+/* ── NAV ── */
+nav{
+  background:var(--blue);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;height:60px;position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 12px rgba(26,58,143,0.3);
+}
+.nav-logo{
+  font-family:'Merriweather',serif;font-size:1rem;color:var(--white);
+  text-decoration:none;line-height:1.3;
+}
+.nav-logo span{color:var(--gold-light);}
+.nav-links{display:flex;gap:0;list-style:none;}
+.nav-links a{
+  color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.82rem;
+  padding:0 0.9rem;height:60px;display:flex;align-items:center;
+  transition:background 0.15s,color 0.15s;white-space:nowrap;
+}
+.nav-links a:hover{background:rgba(255,255,255,0.12);color:var(--white);}
+.nav-links a.active{background:rgba(255,255,255,0.15);color:var(--gold-light);}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 60%, #1e5799 100%);
+  padding:3.5rem 2rem;text-align:center;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1509228468518-180dd4864904?w=1400&q=70') center/cover no-repeat;
+  opacity:0.07;
+}
+.hero-inner{position:relative;z-index:1;max-width:900px;margin:0 auto;}
+.hero h1{
+  font-family:'Merriweather',serif;font-size:clamp(1.6rem,3vw,2.4rem);
+  color:var(--white);line-height:1.3;margin-bottom:0.75rem;font-weight:700;
+}
+.hero h1 span{color:var(--gold-light);}
+.hero-sub{
+  color:rgba(255,255,255,0.8);font-size:1.05rem;
+  margin-bottom:1.5rem;line-height:1.75;max-width:700px;margin-left:auto;margin-right:auto;
+}
+.hero-quote{
+  display:inline-block;
+  font-family:'Merriweather',serif;font-style:italic;
+  color:var(--gold-light);font-size:1.1rem;
+  margin-bottom:1.75rem;
+}
+.hero-badges{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;}
+.hero-badge{
+  background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);
+  color:rgba(255,255,255,0.9);font-size:0.82rem;padding:0.4rem 1rem;border-radius:4px;
+}
+.hero-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
+.btn-gold{
+  background:var(--gold);color:var(--white);padding:0.75rem 1.75rem;
+  border-radius:4px;text-decoration:none;font-weight:600;font-size:0.95rem;
+  transition:background 0.2s;display:inline-block;
+}
+.btn-gold:hover{background:var(--gold-light);}
+.btn-white-outline{
+  background:transparent;color:var(--white);padding:0.75rem 1.75rem;
+  border-radius:4px;text-decoration:none;font-size:0.95rem;
+  border:1.5px solid rgba(255,255,255,0.5);transition:border-color 0.2s;display:inline-block;
+}
+.btn-white-outline:hover{border-color:var(--white);}
+
+/* ── MATHEMATICIANS IMAGE ── */
+.hero-img-strip{
+  background:var(--blue);padding:1.5rem 2rem;text-align:center;
+  border-bottom:3px solid var(--gold);
+}
+.hero-img-strip img{max-width:700px;width:100%;border-radius:4px;}
+.hero-img-strip p{
+  color:rgba(255,255,255,0.6);font-size:0.82rem;margin-top:0.75rem;
+  font-style:italic;
+}
+
+/* ── SECTION BASE ── */
+section{padding:3.5rem 2rem;}
+.section-inner{max-width:1100px;margin:0 auto;}
+.section-heading{
+  font-family:'Merriweather',serif;font-size:1.4rem;font-weight:700;
+  color:var(--blue);margin-bottom:1rem;padding-bottom:0.5rem;
+  border-bottom:2px solid var(--gold);display:inline-block;
+}
+.section-intro{color:var(--muted);font-size:0.97rem;line-height:1.8;margin-bottom:2rem;}
+
+/* ── WHAT IS TFM ── */
+.what{background:var(--off-white);}
+.what-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.what p{color:var(--muted);line-height:1.85;margin-bottom:1rem;font-size:0.97rem;}
+.what p strong{color:var(--blue);}
+.what-highlights{display:flex;flex-direction:column;gap:0.75rem;}
+.highlight{
+  background:var(--white);border:1px solid var(--border);border-left:4px solid var(--blue);
+  border-radius:4px;padding:1rem 1.25rem;
+}
+.highlight h4{font-size:0.9rem;font-weight:600;color:var(--blue);margin-bottom:0.2rem;}
+.highlight p{font-size:0.85rem;color:var(--muted);line-height:1.5;margin:0;}
+
+/* ── SCREENSHOTS ── */
+.screenshots{background:var(--white);}
+.screenshots-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;
+}
+.screenshot-item{
+  border:1px solid var(--border);border-radius:6px;overflow:hidden;
+  transition:box-shadow 0.2s;
+}
+.screenshot-item:hover{box-shadow:0 6px 20px rgba(26,58,143,0.15);}
+.screenshot-item img{width:100%;display:block;cursor:pointer;}
+.screenshot-item p{font-size:0.75rem;color:var(--muted);padding:0.5rem 0.75rem;text-align:center;background:var(--off-white);}
+
+/* ── COVERAGE TABLE ── */
+.coverage{background:var(--bg);}
+.table-wrap{overflow-x:auto;margin-top:1.5rem;}
+table{width:100%;border-collapse:collapse;font-size:0.82rem;}
+thead th{
+  background:var(--blue);color:var(--white);
+  padding:0.65rem 0.75rem;text-align:left;font-weight:600;white-space:nowrap;
+}
+thead th:first-child{min-width:130px;}
+thead th:nth-child(2){min-width:340px;}
+tbody tr:nth-child(even){background:var(--blue-pale);}
+tbody tr:nth-child(odd){background:var(--white);}
+tbody td{padding:0.55rem 0.75rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5;}
+tbody td:first-child{font-weight:600;color:var(--blue);white-space:nowrap;}
+.inc{color:#1a7a3c;font-weight:600;text-align:center;}
+.na{color:#aaa;text-align:center;}
+.group-header td{
+  background:var(--blue-mid)!important;color:var(--white)!important;
+  font-weight:700;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;
+  padding:0.5rem 0.75rem;
+}
+
+/* ── PRESENTATIONS ── */
+.presentations{background:var(--white);}
+.pres-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+.pres-card{
+  background:var(--off-white);border:1px solid var(--border);border-radius:6px;
+  padding:1.1rem;transition:border-color 0.2s,box-shadow 0.2s;
+}
+.pres-card:hover{border-color:var(--blue-light);box-shadow:0 4px 16px rgba(26,58,143,0.1);}
+.pres-num{
+  display:inline-block;background:var(--blue);color:var(--white);
+  font-size:0.72rem;font-weight:700;padding:0.2rem 0.55rem;border-radius:3px;margin-bottom:0.6rem;
+}
+.pres-num.new-tag{background:var(--gold);}
+.pres-card h4{font-size:0.9rem;font-weight:600;color:var(--blue);margin-bottom:0.4rem;line-height:1.3;}
+.pres-card ul{list-style:none;padding:0;}
+.pres-card ul li{
+  font-size:0.78rem;color:var(--muted);padding:0.2rem 0 0.2rem 0.9rem;
+  position:relative;line-height:1.45;
+}
+.pres-card ul li::before{content:'·';position:absolute;left:0;color:var(--blue);}
+.pres-slides{font-size:0.72rem;color:var(--muted);margin-top:0.5rem;font-style:italic;}
+
+/* ── PACKAGES ── */
+.packages{background:var(--bg);}
+.packages-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-bottom:2.5rem;}
+.pkg-card{
+  background:var(--white);border:1px solid var(--border);border-radius:6px;
+  padding:1rem;
+}
+.pkg-card h4{
+  font-size:0.85rem;font-weight:700;color:var(--white);
+  background:var(--blue);margin:-1rem -1rem 0.75rem;padding:0.5rem 0.75rem;
+  border-radius:5px 5px 0 0;
+}
+.pkg-card ul{list-style:none;padding:0;}
+.pkg-card ul li{font-size:0.75rem;color:var(--muted);padding:0.15rem 0 0.15rem 0.85rem;position:relative;line-height:1.4;}
+.pkg-card ul li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:0.65rem;}
+.pricing-img-wrap{text-align:center;margin:2rem 0;}
+.pricing-img-wrap img{max-width:700px;width:100%;border:1px solid var(--border);border-radius:6px;}
+.pricing-img-placeholder{
+  max-width:700px;margin:0 auto;
+  background:var(--blue-pale);border:2px dashed var(--border);border-radius:6px;
+  padding:3rem;text-align:center;color:var(--muted);font-size:0.9rem;
+}
+.pricing-img-placeholder strong{color:var(--blue);display:block;margin-bottom:0.5rem;}
+
+/* ── LICENCES ── */
+.licences{background:var(--white);}
+.licence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:2rem;}
+.licence-card{
+  background:var(--off-white);border:1px solid var(--border);
+  border-top:3px solid var(--blue);border-radius:6px;padding:1.25rem;
+}
+.licence-card h4{font-size:0.95rem;font-weight:700;color:var(--blue);margin-bottom:0.5rem;}
+.licence-card p{font-size:0.85rem;color:var(--muted);line-height:1.6;}
+
+/* ── HOW TO BUY ── */
+.how-to-buy{background:var(--blue);padding:3rem 2rem;}
+.how-to-buy .section-inner{max-width:900px;}
+.how-to-buy .section-heading{color:var(--gold-light);border-color:var(--gold-light);}
+.buy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.buy-card{
+  background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);
+  border-radius:6px;padding:1.5rem;
+}
+.buy-card h4{color:var(--gold-light);font-size:0.95rem;font-weight:700;margin-bottom:0.75rem;}
+.buy-card p{color:rgba(255,255,255,0.75);font-size:0.87rem;line-height:1.7;}
+.buy-card a{color:var(--gold-light);}
+.buy-note{
+  background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);
+  border-radius:6px;padding:1.25rem 1.5rem;margin-top:1.5rem;
+  color:rgba(255,255,255,0.8);font-size:0.87rem;line-height:1.7;
+}
+.buy-note strong{color:var(--gold-light);}
+
+/* ── WISE PAYMENTS ── */
+.wise{background:var(--off-white);}
+.wise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.wise-card{
+  background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.1rem;
+}
+.wise-card h4{font-size:0.85rem;font-weight:700;color:var(--blue);margin-bottom:0.75rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border);}
+.wise-card table{width:100%;font-size:0.78rem;}
+.wise-card td{padding:0.25rem 0;vertical-align:top;color:var(--muted);}
+.wise-card td:first-child{color:var(--ink);font-weight:600;width:45%;padding-right:0.5rem;}
+.wise-steps{margin-top:1.5rem;}
+.wise-steps h4{font-size:0.95rem;font-weight:700;color:var(--blue);margin-bottom:0.75rem;}
+.wise-steps ol{padding-left:1.25rem;color:var(--muted);font-size:0.87rem;line-height:1.8;}
+.wise-steps a{color:var(--blue);}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--white);}
+.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.test-card{
+  background:var(--off-white);border:1px solid var(--border);border-left:4px solid var(--gold);
+  border-radius:4px;padding:1.25rem;
+}
+.test-card blockquote{font-family:'Merriweather',serif;font-style:italic;font-size:0.92rem;color:var(--ink);line-height:1.7;}
+.test-card cite{display:block;margin-top:0.75rem;font-style:normal;font-size:0.78rem;color:var(--muted);font-weight:600;}
+
+/* ── OTHER LINKS ── */
+.other-links{background:var(--bg);}
+.links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+.link-card{
+  background:var(--white);border:1px solid var(--border);border-radius:6px;
+  padding:1.25rem;text-align:center;text-decoration:none;
+  transition:border-color 0.2s,box-shadow 0.2s;display:block;
+}
+.link-card:hover{border-color:var(--blue-light);box-shadow:0 4px 16px rgba(26,58,143,0.1);}
+.link-card h4{font-size:0.95rem;font-weight:700;color:var(--blue);margin-bottom:0.4rem;}
+.link-card p{font-size:0.82rem;color:var(--muted);}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink);padding:2rem;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
+}
+.footer-logo{font-family:'Merriweather',serif;color:var(--white);font-size:0.9rem;}
+.footer-social{display:flex;gap:1rem;}
+.footer-social a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.82rem;transition:color 0.2s;}
+.footer-social a:hover{color:var(--gold-light);}
+.footer-copy{color:rgba(255,255,255,0.3);font-size:0.75rem;width:100%;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .what-grid,.buy-grid,.screenshots-grid{grid-template-columns:1fr;}
+  .pres-grid{grid-template-columns:1fr 1fr;}
+  .packages-grid{grid-template-columns:1fr 1fr;}
+  .wise-grid{grid-template-columns:1fr 1fr;}
+  .licence-grid,.test-grid{grid-template-columns:1fr;}
+  .links-grid{grid-template-columns:1fr 1fr;}
+  nav{padding:0 1rem;}
+  .nav-links a{padding:0 0.5rem;font-size:0.75rem;}
+}
+@media(max-width:600px){
+  .pres-grid,.packages-grid,.wise-grid,.links-grid{grid-template-columns:1fr;}
+  .nav-links{display:none;}
+}
+.tfm-page{display:none;}
+.tfm-page.active{display:block;}
+
+/* ── PRICING TABLE ── */
+.pricing-table-wrap{overflow-x:auto;margin:1.5rem 0;}
+.pricing-table{border-collapse:collapse;width:100%;max-width:750px;font-family:'Source Sans 3',sans-serif;}
+.pricing-table thead tr{background:#000;}
+.pt-header-main{
+  background:#ffff00;color:#cc0000;
+  font-family:'Impact',sans-serif;font-size:1.4rem;
+  padding:0.75rem 1rem;text-align:left;vertical-align:middle;
+  min-width:160px;
+}
+.pt-col1{color:#cc0000;font-size:1rem;font-weight:700;padding:0.75rem 1.5rem;text-align:center;vertical-align:middle;}
+.pt-col2{color:#1a3a8f;font-size:1rem;font-weight:700;padding:0.75rem 1.5rem;text-align:center;vertical-align:middle;}
+.pt-col3{color:#1a7a3c;font-size:1rem;font-weight:700;padding:0.75rem 1.5rem;text-align:center;vertical-align:middle;}
+.pricing-table tbody tr{background:#000;}
+.pricing-table tbody tr:hover{background:#111;}
+.pt-row-label{
+  color:#cc0000;font-size:0.9rem;font-weight:700;
+  padding:1rem 1rem;vertical-align:middle;
+}
+.pt-price1{color:#cc0000;font-size:1.6rem;font-weight:700;text-align:center;padding:1rem 1.5rem;vertical-align:middle;}
+.pt-price2{color:#1a3a8f;font-size:1.6rem;font-weight:700;text-align:center;padding:1rem 1.5rem;vertical-align:middle;}
+.pt-price3{color:#1a7a3c;font-size:1.6rem;font-weight:700;text-align:center;padding:1rem 1.5rem;vertical-align:middle;}
+
+
+
+.screenshot-item{cursor:pointer;}
+.screenshot-item:hover img{opacity:0.85;}
+.screenshot-item img{cursor:zoom-in;}
+#lb{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.9);align-items:center;justify-content:center;cursor:pointer;}
+#lb img{max-width:92vw;max-height:92vh;border-radius:4px;cursor:default;}
+#lb-close{position:fixed;top:1rem;right:1.5rem;color:#fff;font-size:2.5rem;line-height:1;cursor:pointer;font-weight:300;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo" onclick="showPage('main');return false;">Teach <span>Further</span> Maths</a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('main');setTimeout(function(){document.getElementById('what').scrollIntoView();},50);return false;" id="nav-main">About</a></li>
+    <li><a href="#" onclick="showPage('main');setTimeout(function(){document.getElementById('screenshots').scrollIntoView();},50);return false;">Screenshots</a></li>
+    <li><a href="#" onclick="showPage('main');setTimeout(function(){document.getElementById('coverage').scrollIntoView();},50);return false;">Coverage</a></li>
+    <li><a href="#" onclick="showPage('main');setTimeout(function(){document.getElementById('presentations').scrollIntoView();},50);return false;">Presentations</a></li>
+    <li><a href="#" onclick="showPage('main');setTimeout(function(){document.getElementById('packages').scrollIntoView();},50);return false;">Packages &amp; Pricing</a></li>
+    <li><a href="#" onclick="showPage('main');setTimeout(function(){document.getElementById('buy').scrollIntoView();},50);return false;">How to Buy</a></li>
+    <li><a href="#" onclick="showPage('testimonials');return false;" id="nav-testimonials">Testimonials</a></li>
+    <li><a href="#" onclick="showPage('faqs');return false;" id="nav-faqs">FAQs</a></li>
+    <li><a href="#" onclick="showPage('contact');return false;" id="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Superb PowerPoint Teaching Resources<br>for Teachers of <span>A-Level Further Maths</span></h1>
+    <p class="hero-quote">"…student friendly and should be in every school in the UK!"</p>
+    <p class="hero-sub">Written by a very experienced classroom practitioner, examiner and published maths author, 'Teach Further Maths' is a suite of high quality, fully animated colour A-Level Further Maths PowerPoint presentations consisting of over 3000 slides.</p>
+    <div class="hero-badges">
+      <span class="hero-badge">✓ Edexcel</span>
+      <span class="hero-badge">✓ AQA</span>
+      <span class="hero-badge">✓ OCR</span>
+      <span class="hero-badge">✓ MEI</span>
+      <span class="hero-badge">✓ 3000+ Slides</span>
+      <span class="hero-badge">✓ Fully Animated</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#packages" class="btn-gold">View Packages &amp; Pricing</a>
+      <a href="free-sample.pptx" download class="btn-white-outline">Free Sample Presentation</a>
+    </div>
+  </div>
+</div>
+
+<div id="page-main" class="tfm-page active">
+<div class="hero-img-strip">
+  <img src="mathematicians.png" alt="Euler, Newton, Gauss, Fermat, Pascal — a selection of outstanding mathematicians in history">
+  <p>A selection of some of the most outstanding and inspiring mathematicians in history</p>
+</div>
+
+<section class="what" id="what">
+  <div class="section-inner">
+    <h2 class="section-heading">What is 'Teach Further Maths'?</h2>
+    <div class="what-grid">
+      <div>
+        <p><strong>'Teach Further Maths'</strong> is a suite of high quality, fully animated colour A-Level Further Maths PowerPoint presentations, consisting of over 3000 slides.</p>
+        <p>Written for teachers by a very experienced classroom practitioner, examiner and published maths author (Paul Hunt), the presentations include demonstrations, proofs, worked examples, exercises, exam-style questions and actual exam questions (used with permission).</p>
+        <p>'Teach Further Maths' is perfect for the current specifications and includes <strong>complete coverage of the compulsory content from all of the main examination boards</strong> — Edexcel, AQA, OCR and MEI.</p>
+        <p>Each presentation is designed to be used directly in the classroom, saving teachers significant preparation time whilst delivering exceptional quality lessons.</p>
+      </div>
+      <div class="what-highlights">
+        <div class="highlight">
+          <h4>3000+ Slides</h4>
+          <p>An extensive suite of presentations covering every compulsory topic for all major exam boards.</p>
+        </div>
+        <div class="highlight">
+          <h4>Fully Animated</h4>
+          <p>High quality colour animations bring mathematical concepts to life in the classroom.</p>
+        </div>
+        <div class="highlight">
+          <h4>Written by an Examiner</h4>
+          <p>Includes actual exam questions (used with permission) and exam-style practice throughout.</p>
+        </div>
+        <div class="highlight">
+          <h4>All 4 Major Exam Boards</h4>
+          <p>Complete compulsory content coverage for Edexcel, AQA, OCR and MEI.</p>
+        </div>
+        <div class="highlight">
+          <h4>Try Before You Buy</h4>
+          <p>A free sample presentation is available — see <a href="free-sample.pptx" download>Free Sample Presentation</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="screenshots" id="screenshots">
+  <div class="section-inner">
+    <h2 class="section-heading">Screenshots from 'Teach Further Maths'</h2>
+    <p class="section-intro">A small sample of what to expect:</p>
+    <div class="screenshots-grid">
+      <div class="screenshot-item" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='demoivres.png'">
+        <img src="demoivres.png" alt="De Moivre's Theorem and Applications 2">
+        <p>DeMoivre's Theorem &amp; Applications 2</p>
+      </div>
+      <div class="screenshot-item" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='improper-integral.png'">
+        <img src="improper-integral.png" alt="Improper Integrals">
+        <p>Improper Integrals</p>
+      </div>
+      <div class="screenshot-item" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='2nd-order-des.png'">
+        <img src="2nd-order-des.png" alt="2nd Order Differential Equations">
+        <p>2nd Order Differential Equations</p>
+      </div>
+      <div class="screenshot-item" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='matrix-solutions.png'">
+        <img src="matrix-solutions.png" alt="Matrix Solution of Simultaneous Equations">
+        <p>Matrix Solution of Simultaneous Equations</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="coverage" id="coverage">
+  <div class="section-inner">
+    <h2 class="section-heading">Compulsory A-Level Further Mathematics Content by Exam Board</h2>
+    <p class="section-intro">Teach Further Maths includes full, detailed coverage of every topic from the compulsory content that teachers are required to deliver. All 4 of the main exam boards are completely catered for.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Topic</th>
+            <th>Content</th>
+            <th>Edexcel</th>
+            <th>AQA</th>
+            <th>OCR 'A'</th>
+            <th>MEI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group-header"><td colspan="6">Proof</td></tr>
+          <tr><td>Proof</td><td>Construct proofs by mathematical induction</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+
+          <tr class="group-header"><td colspan="6">Complex Numbers</td></tr>
+          <tr><td>Complex Numbers</td><td>Solve any quadratic with real coefficients</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Solve cubic or quartic equations with real coefficients</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Add, subtract, multiply and divide complex numbers; real part, imaginary part, modulus and argument</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Understand and use the complex conjugate; non-real roots of polynomials occur in conjugate pairs</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Use and interpret Argand diagrams</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Convert between Cartesian form and Modulus-Argument form</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Multiply and divide complex numbers in modulus-argument form</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Construct and interpret simple loci in an Argand diagram</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Know and use both forms of Euler's formula</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Understand and use De Moivre's Theorem; multiple angle formulae and sums of series</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Find the nth roots of any complex number; vertices of a regular n-sided polygon in the Argand diagram</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Complex Numbers</td><td>Use complex roots of unity to solve geometric problems</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+
+          <tr class="group-header"><td colspan="6">Matrices</td></tr>
+          <tr><td>Matrices</td><td>Add, subtract and multiply conformable matrices; multiply a matrix by a scalar</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Understand and use zero and identity matrices</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Matrix multiplication is associative but not commutative</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Matrices representing linear transformations in 2D including simple shears; successive transformations; 3D transformations</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Find invariant points and lines for a linear transformation</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Find the determinant of 2×2 and 3×3 matrices</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Determinant of a 2×2 matrix as area scale factor; interpretation of sign</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Calculate the inverse of 2×2 and 3×3 non-singular matrices</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Solve 3 simultaneous linear equations using the inverse matrix</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Interpret geometrically the solution and failure of 3 simultaneous equations</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Matrices</td><td>Factorisation of determinants using row and column operations</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Matrices</td><td>Find eigenvalues and eigenvectors of 2×2 and 3×3 matrices; characteristic equation</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Matrices</td><td>Diagonalise matrices</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+
+          <tr class="group-header"><td colspan="6">Further Algebra</td></tr>
+          <tr><td>Further Algebra</td><td>Relationship between roots and coefficients of polynomial equations up to quartics</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Form a polynomial equation whose roots are a linear transformation of the roots of a given polynomial</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Formulae for sums of integers, squares and cubes; sum other series</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Method of differences for summation of series including use of partial fractions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Find the Maclaurin series of a function including its general term</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Recognise and use Maclaurin series; ranges of validity</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Evaluation of limits using Maclaurin series (L'Hôpital's Rule also included)</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Algebra</td><td>Inequalities involving polynomial equations (cubic and quartic)</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Further Algebra</td><td>Solving rational inequalities algebraically</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Further Algebra</td><td>Modulus of functions and associated inequalities</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Further Algebra</td><td>Graphs of rational functions; asymptotes and points of intersection</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Further Algebra</td><td>Sketching curves of parabolas, ellipses and hyperbolas</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Further Algebra</td><td>Transformations of curves: translations, stretches, reflections and composite transformations</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+
+          <tr class="group-header"><td colspan="6">Further Calculus</td></tr>
+          <tr><td>Further Calculus</td><td>Evaluate improper integrals (undefined integrand or infinite interval)</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Calculus</td><td>Derive formulae for and evaluate volumes of revolution</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Calculus</td><td>Understand and evaluate the mean value of a function</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Calculus</td><td>Integrate using partial fractions (including quadratic factors in the denominator)</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Calculus</td><td>Differentiate inverse trigonometric functions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Calculus</td><td>Integrate functions using appropriate trigonometric substitutions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Calculus</td><td>Arc length and surface area of revolution (Cartesian and parametric)</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Further Calculus</td><td>Derivation and use of reduction formulae for integration</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+
+          <tr class="group-header"><td colspan="6">Further Vectors</td></tr>
+          <tr><td>Further Vectors</td><td>Vector and Cartesian form of an equation of a straight line in 3D</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Vectors</td><td>Vector and Cartesian forms of an equation of a plane</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Vectors</td><td>Scalar product; angles between lines and planes</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Vectors</td><td>Intersections of lines and planes; distances from points to lines and planes</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Vectors</td><td>Parallel, skew or intersecting lines in 3D</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Vectors</td><td>Distance between parallel lines and shortest distance between skew lines</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Further Vectors</td><td>Vector product to find perpendicular vectors; areas of triangles</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+
+          <tr class="group-header"><td colspan="6">Polar Coordinates</td></tr>
+          <tr><td>Polar Coordinates</td><td>Understand and use polar coordinates; convert between polar and Cartesian</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Polar Coordinates</td><td>Sketch curves with simple polar equations</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Polar Coordinates</td><td>Find the area enclosed by a polar curve</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+
+          <tr class="group-header"><td colspan="6">Hyperbolic Functions</td></tr>
+          <tr><td>Hyperbolic Functions</td><td>Definitions, domains, ranges and graphs of hyperbolic functions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Hyperbolic Functions</td><td>Inverse hyperbolic functions: definitions, domains and ranges</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Hyperbolic Functions</td><td>Differentiate and integrate hyperbolic functions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Hyperbolic Functions</td><td>Logarithmic forms of the inverse hyperbolic functions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Hyperbolic Functions</td><td>Integrate using appropriate hyperbolic substitutions</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Hyperbolic Functions</td><td>Construct proofs involving hyperbolic functions and identities</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+
+          <tr class="group-header"><td colspan="6">Differential Equations</td></tr>
+          <tr><td>Differential Equations</td><td>Integrating factor to solve first order linear differential equations</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>General and particular solutions to differential equations</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Differential equations in modelling (kinematics and other contexts)</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Second order DEs using the auxiliary equation</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Second order DEs: complementary function and particular integral</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Discriminant of auxiliary equation and form of solution</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Simple harmonic motion</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Damped oscillations using second order differential equations</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+          <tr><td>Differential Equations</td><td>Coupled first order simultaneous equations (e.g. predator-prey models)</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td><td class="inc">✓</td></tr>
+
+          <tr class="group-header"><td colspan="6">Numerical Methods</td></tr>
+          <tr><td>Numerical Methods</td><td>Mid-ordinate rule and Simpson's rule for integration</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Numerical Methods</td><td>Euler's method and Mid-Point Method for first order DEs</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+          <tr><td>Numerical Methods</td><td>Improved Euler Method for first order differential equations</td><td class="na">N/A</td><td class="inc">✓</td><td class="na">N/A</td><td class="na">N/A</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="presentations" id="presentations">
+  <div class="section-inner">
+    <h2 class="section-heading">A-Level Further Mathematics Presentations</h2>
+    <p class="section-intro">68 presentations in total, covering all compulsory content. Slide counts are approximate guides only.</p>
+    <div class="pres-grid">
+      <div class="pres-card"><span class="pres-num">F1</span><h4>Asymptotes and Rational Functions</h4><ul><li>Horizontal and vertical asymptotes</li><li>Sketching graphs of rational functions</li></ul><p class="pres-slides">32 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F2</span><h4>Complex Numbers 1</h4><ul><li>Imaginary numbers and powers of i</li><li>Complex numbers and quadratic equations</li><li>Argand diagrams; arithmetic with complex numbers</li></ul><p class="pres-slides">37 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F3</span><h4>First Order Differential Equations</h4><ul><li>Separation of variables</li><li>Family of solution curves</li><li>Integrating factor method</li></ul><p class="pres-slides">37 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F4</span><h4>Improper Integrals 1</h4><ul><li>Evaluating simple improper integrals</li></ul><p class="pres-slides">12 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F5</span><h4>Matrices</h4><ul><li>Matrix terminology and operations</li><li>Square, identity and zero matrices</li></ul><p class="pres-slides">64 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F6</span><h4>Inequalities Involving Rational Expressions</h4><ul><li>Solving inequalities with rational expressions</li></ul><p class="pres-slides">41 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F7</span><h4>Polar Coordinates 1</h4><ul><li>Plotting and sketching polar curves</li></ul><p class="pres-slides">42 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F8</span><h4>Roots of Quadratics</h4><ul><li>Roots and coefficients of quadratic equations</li><li>Finding equations with related roots</li></ul><p class="pres-slides">61 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F9</span><h4>Matrix Transformations</h4><ul><li>Matrices associated with common transformations</li><li>Describing transformations from matrices</li></ul><p class="pres-slides">64 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F10</span><h4>More Asymptotes and Rational Functions</h4><ul><li>Sketching further rational functions</li><li>Stationary points without calculus</li></ul><p class="pres-slides">46 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F11</span><h4>Polar Coordinates 2</h4><ul><li>Converting between polar and Cartesian</li><li>Integration to find polar areas</li><li>Tangents at the pole</li></ul><p class="pres-slides">73 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F12</span><h4>Second Order Differential Equations</h4><ul><li>Auxiliary equation method</li><li>Complementary function and particular integral</li></ul><p class="pres-slides">78 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F13</span><h4>Complex Numbers 2</h4><ul><li>Modulus-Argument form</li><li>Dividing complex numbers</li><li>Solving equations using real and imaginary parts</li></ul><p class="pres-slides">55 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F14</span><h4>Improper Integrals 2</h4><ul><li>Further improper integrals</li></ul><p class="pres-slides">23 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F15</span><h4>Roots of Polynomials</h4><ul><li>Roots and coefficients of polynomial equations</li><li>Equations with related roots</li></ul><p class="pres-slides">65 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F16</span><h4>Graphical Solution of Inequalities</h4><ul><li>Graphical method for rational inequalities</li></ul><p class="pres-slides">34 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F17</span><h4>Composite Geometric Transformations Using Matrices</h4><ul><li>Composite transformation matrices</li></ul><p class="pres-slides">28 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F18</span><h4>Numerical Methods</h4><ul><li>Interval bisection; linear interpolation</li><li>Newton-Raphson; Euler's method</li></ul><p class="pres-slides">59 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F19</span><h4>Hyperbolic Functions</h4><ul><li>Definitions, graphs and identities</li><li>Osborn's Rule</li></ul><p class="pres-slides">31 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F20</span><h4>Inverse Trigonometric Functions</h4><ul><li>Graphs and differentiation</li><li>Integration to inverse trig functions</li></ul><p class="pres-slides">47 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F21</span><h4>More 1st and 2nd Order Differential Equations 1</h4><ul><li>CF and PI for first order DEs</li><li>Change of variable</li></ul><p class="pres-slides">30 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F22</span><h4>Polar Coordinates 3</h4><ul><li>Exam-style polar geometry questions</li></ul><p class="pres-slides">20 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F23</span><h4>Complex Roots of Polynomials with Real Coefficients</h4><ul><li>Complex roots occur in conjugate pairs</li></ul><p class="pres-slides">33 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F24</span><h4>Series</h4><ul><li>Sigma notation; formulae for Σr, Σr², Σr³</li><li>Algebraic manipulation of series</li></ul><p class="pres-slides">47 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F25</span><h4>Matrices and Linear Transformations</h4><ul><li>Linear transformations and their matrices</li><li>Invariant points and lines; transpose</li></ul><p class="pres-slides">73 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F26</span><h4>De Moivre's Theorem and Applications 1</h4><ul><li>Powers of complex numbers</li><li>Trigonometric identities</li></ul><p class="pres-slides">43 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F27</span><h4>Differentiation of Hyperbolic Functions</h4><ul><li>Derivatives and graphs of hyperbolic functions</li><li>Inverse hyperbolic functions in logarithmic form</li></ul><p class="pres-slides">36 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F28</span><h4>Exponential Form of a Complex Number</h4><ul><li>Exponential form; multiplying and dividing</li></ul><p class="pres-slides">18 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F29</span><h4>Inverse Matrices and Determinants</h4><ul><li>Inverse and determinant of 2×2 and 3×3 matrices</li><li>Geometric interpretation of determinants</li></ul><p class="pres-slides">54 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F30</span><h4>Matrix Solution of Simultaneous Equations 1</h4><ul><li>Solving simultaneous equations via inverse matrix</li></ul><p class="pres-slides">28 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F31</span><h4>Maclaurin's Series</h4><ul><li>Series expansions and ranges of validity</li></ul><p class="pres-slides">38 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F32</span><h4>Parabolas, Ellipses and Hyperbolas</h4><ul><li>Equations, sketches and transformations</li><li>Asymptotes of hyperbolas</li></ul><p class="pres-slides">70 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F33</span><h4>The Method of Differences</h4><ul><li>Proving summation results</li></ul><p class="pres-slides">17 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F34</span><h4>Loci in the Complex Plane</h4><ul><li>Sketching loci on an Argand diagram</li></ul><p class="pres-slides">52 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F35</span><h4>De Moivre's Theorem and Applications 2</h4><ul><li>Cube and nth roots of unity</li><li>nth roots of any complex number</li></ul><p class="pres-slides">57 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F36</span><h4>Integration with Hyperbolic Functions</h4><ul><li>Integrating hyperbolic functions</li><li>Integrals leading to inverse hyperbolic functions</li></ul><p class="pres-slides">35 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F37</span><h4>Limits of Maclaurin's Series</h4><ul><li>Using series to find limits; L'Hôpital's Rule</li></ul><p class="pres-slides">45 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F38</span><h4>More 1st and 2nd Order Differential Equations 2</h4><ul><li>Chain rule with first and second derivatives</li><li>Substitution to solve second order DEs</li></ul><p class="pres-slides">38 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F39</span><h4>Numerical Methods for 1st Order DEs</h4><ul><li>Euler's Method; Mid-Point Method; Improved Euler Method</li></ul><p class="pres-slides">58 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F40</span><h4>Proof by Mathematical Induction</h4><ul><li>Induction for series summation and other results</li></ul><p class="pres-slides">49 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F41</span><h4>Solving Hyperbolic Equations</h4><ul><li>Techniques for solving hyperbolic equations</li></ul><p class="pres-slides">13 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F42</span><h4>Eigenvalues and Eigenvectors</h4><ul><li>Characteristic equation; eigenvalues and eigenvectors</li><li>Normalised and orthogonal eigenvectors</li></ul><p class="pres-slides">54 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F43</span><h4>Diagonalisation of a Matrix</h4><ul><li>Diagonal and symmetric matrices</li><li>Diagonalising a matrix; powers of symmetric matrices</li></ul><p class="pres-slides">40 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F44 NEW</span><h4>Further Vectors 1</h4><ul><li>Distance in 3D; dividing a line in a given ratio</li><li>Vector equations of lines (vector and Cartesian form)</li></ul><p class="pres-slides">43 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F45 NEW</span><h4>Further Vectors 2</h4><ul><li>Scalar product; angles between vectors</li><li>Intersection and skew lines</li></ul><p class="pres-slides">66 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F46 NEW</span><h4>Further Vectors 3</h4><ul><li>Equation of a plane (scalar, Cartesian, parametric)</li><li>Perpendicular distance from a point to a plane</li></ul><p class="pres-slides">51 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F47 NEW</span><h4>Further Vectors 4</h4><ul><li>Angles between lines and planes; intersection of planes</li></ul><p class="pres-slides">55 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F48 NEW</span><h4>Matrix Solution of Simultaneous Equations 2</h4><ul><li>Geometric interpretation of 3 simultaneous equations</li><li>Sheaf, prism, parallel and consistent/inconsistent cases</li></ul><p class="pres-slides">50 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F49 NEW</span><h4>Volumes of Revolution</h4><ul><li>Formulae and calculations for volumes of revolution</li></ul><p class="pres-slides">69 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F50 NEW</span><h4>Mean Value Theorem</h4><ul><li>Mean value theorem for integration; Root Mean Square</li></ul><p class="pres-slides">37 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F51 NEW</span><h4>Partial Fractions and Integration</h4><ul><li>Partial fractions with quadratic denominators</li><li>Integration using partial fractions</li></ul><p class="pres-slides">47 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F52 NEW</span><h4>A Geometric View of Determinants</h4><ul><li>Geometric interpretation of 2×2 and 3×3 determinants</li></ul><p class="pres-slides">30 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F53 NEW</span><h4>Matrix Transformations in 3D</h4><ul><li>Reflections and rotations about coordinate axes in 3D</li></ul><p class="pres-slides">40 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F54 NEW</span><h4>Further Vectors 5</h4><ul><li>Distance between parallel lines and skew lines</li></ul><p class="pres-slides">33 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F55 NEW</span><h4>Further Vectors 6</h4><ul><li>Vector product; perpendicular vectors; areas and volumes</li></ul><p class="pres-slides">52 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F56 NEW</span><h4>Further Vectors 7</h4><ul><li>Equation of a line using vector product</li><li>Distances and shortest distance between skew lines</li></ul><p class="pres-slides">36 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F57 NEW</span><h4>De Moivre's Theorem and Applications 3</h4><ul><li>Summing series using De Moivre's Theorem</li></ul><p class="pres-slides">39 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F58 NEW</span><h4>De Moivre's Theorem and Applications 4</h4><ul><li>Geometric problems using De Moivre's Theorem</li></ul><p class="pres-slides">57 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F59 NEW</span><h4>Modelling with 1st Order Differential Equations</h4><ul><li>Modelling with first order and coupled first order DEs</li></ul><p class="pres-slides">64 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F60 NEW</span><h4>Modelling with 2nd Order Differential Equations</h4><ul><li>Simple harmonic motion; damped and forced oscillations</li></ul><p class="pres-slides">38 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F61 NEW</span><h4>Reduction Formulae</h4><ul><li>Deriving and using reduction formulae for integration</li></ul><p class="pres-slides">47 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F62 NEW</span><h4>Factorising Determinants</h4><ul><li>Rules for simplifying and factorising determinants</li></ul><p class="pres-slides">57 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F63 NEW</span><h4>Further Numerical Integration</h4><ul><li>Mid-Ordinate Rule and Simpson's Rule</li></ul><p class="pres-slides">51 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F64 NEW</span><h4>Inequalities Involving Cubic and Quartic Polynomials</h4><ul><li>Rational Root Theorem; Descartes' Rule of Signs</li></ul><p class="pres-slides">41 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F65 NEW</span><h4>Modulus of Functions and Associated Inequalities</h4><ul><li>Transformation rules and inequalities with modulus function</li></ul><p class="pres-slides">57 slides</p></div>
+      <div class="pres-card"><span class="pres-num new-tag">F66 NEW</span><h4>L'Hôpital's Rule</h4><ul><li>Evaluating limits of indeterminate form</li></ul><p class="pres-slides">36 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F67</span><h4>Length of a Curve</h4><ul><li>Arc length in Cartesian and parametric form</li></ul><p class="pres-slides">20 slides</p></div>
+      <div class="pres-card"><span class="pres-num">F68</span><h4>Area of Surface of Revolution</h4><ul><li>Surface area in Cartesian and parametric form</li></ul><p class="pres-slides">22 slides</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="section-inner">
+    <h2 class="section-heading">Packages</h2>
+    <p class="section-intro">There are 4 standard packages of 12 presentations each, plus a bumper Package 5 containing the remaining 20 presentations that complete the full compulsory core content for all major exam boards.</p>
+    <div class="packages-grid">
+      <div class="pkg-card"><h4>Package 1</h4><ul><li>F1. Asymptotes and Rational Functions 1</li><li>F2. Complex Numbers 1</li><li>F3. First Order Differential Equations</li><li>F4. Improper Integrals 1</li><li>F5. Matrices</li><li>F6. Inequalities (Rational Expressions)</li><li>F7. Polar Coordinates 1</li><li>F8. Roots of Quadratics</li><li>F9. Matrix Transformations</li><li>F10. Asymptotes and Rational Functions 2</li><li>F11. Polar Coordinates 2</li><li>F12. Second Order Differential Equations</li></ul></div>
+      <div class="pkg-card"><h4>Package 2</h4><ul><li>F13. Complex Numbers 2</li><li>F14. Improper Integrals 2</li><li>F15. Roots of Polynomials</li><li>F16. Graphical Solution of Inequalities</li><li>F17. Composite Geometric Transformations</li><li>F18. Numerical Methods</li><li>F19. Hyperbolic Functions</li><li>F20. Inverse Trigonometric Functions</li><li>F21. More 1st and 2nd Order DEs 1</li><li>F22. Polar Coordinates 3</li><li>F23. Complex Roots of Polynomials</li><li>F24. Series</li></ul></div>
+      <div class="pkg-card"><h4>Package 3</h4><ul><li>F25. Matrices and Linear Transformations</li><li>F26. De Moivre's Theorem 1</li><li>F27. Differentiation of Hyperbolic Functions</li><li>F28. Exponential Form of a Complex Number</li><li>F29. Inverse Matrices and Determinants</li><li>F30. Matrix Solution of Simultaneous Equations 1</li><li>F31. Maclaurin's Series</li><li>F32. Parabolas, Ellipses and Hyperbolas</li><li>F33. Method of Differences</li><li>F34. Loci in the Complex Plane</li><li>F35. De Moivre's Theorem 2</li><li>F36. Integration with Hyperbolic Functions</li></ul></div>
+      <div class="pkg-card"><h4>Package 4</h4><ul><li>F37. Limits of Maclaurin's Series</li><li>F38. More 1st and 2nd Order DEs 2</li><li>F39. Numerical Methods for 1st Order DEs</li><li>F40. Proof by Mathematical Induction</li><li>F41. Solving Hyperbolic Equations</li><li>F42. Eigenvalues and Eigenvectors</li><li>F43. Diagonalisation of a Matrix</li><li>F44. Further Vectors 1</li><li>F45. Further Vectors 2</li><li>F46. Further Vectors 3</li><li>F47. Further Vectors 4</li><li>F48. Matrix Solution of Simultaneous Equations 2</li></ul></div>
+      <div class="pkg-card"><h4>Package 5 ★</h4><ul><li>F49–F68 (20 presentations)</li><li>Volumes of Revolution</li><li>Mean Value Theorem</li><li>Partial Fractions &amp; Integration</li><li>Further Vectors 5–7</li><li>De Moivre's Theorem 3 &amp; 4</li><li>Modelling with DEs</li><li>Reduction Formulae</li><li>Factorising Determinants</li><li>Further Numerical Integration</li><li>L'Hôpital's Rule</li><li>Length of a Curve; Surface of Revolution</li></ul></div>
+    </div>
+    <h3 style="font-family:'Merriweather',serif;font-size:1.1rem;color:var(--blue);margin-bottom:1.25rem;">Pricing</h3>
+    <div class="pricing-img-wrap"><img src="pricing.png" alt="Teach Further Maths pricing table" style="max-width:100%;"></div>
+  </div>
+</section>
+
+<section class="how-to-buy" id="buy">
+  <div class="section-inner">
+    <h2 class="section-heading">How to Purchase</h2>
+    <div class="buy-grid">
+      <div class="buy-card">
+        <h4>Purchase a Single Package (1, 2, 3 or 4)</h4>
+        <p>Send an email to <a href="mailto:smartsolutions@europe.com">smartsolutions@europe.com</a> stating the <strong>number</strong> of the package required and the <strong>licence type</strong> needed. You will receive a confirmatory response (usually within 1 working day) containing the necessary bank details.</p>
+      </div>
+      <div class="buy-card">
+        <h4>Purchase Package 5</h4>
+        <p>Send an email to <a href="mailto:smartsolutions@europe.com">smartsolutions@europe.com</a> stating that you require <strong>Package 5</strong> and the <strong>licence type</strong> needed. You will receive a confirmatory response (usually within 1 working day) containing the necessary bank details.</p>
+      </div>
+      <div class="buy-card">
+        <h4>Purchase All 5 Packages</h4>
+        <p>Send an email to <a href="mailto:smartsolutions@europe.com">smartsolutions@europe.com</a> stating that you require <strong>all packages</strong> and the <strong>licence type</strong> needed. You will receive a confirmatory response (usually within 1 working day) containing the necessary bank details.</p>
+      </div>
+    </div>
+    <div class="buy-note">
+      <strong>Your presentations will be sent to you via email, usually within one working day of payment being received.</strong> Purchases are non-refundable, although excellent customer service will be provided to ensure you are entirely satisfied with the product. Please view the <a href="#" onclick="showPage('faqs');return false;" style="color:var(--gold-light);">FAQs page</a> for important information about using the presentations. If you have any other queries, please <a href="#" onclick="showPage('contact');return false;" style="color:var(--gold-light);">contact us</a> — we will always be happy to help.
+    </div>
+  </div>
+</section>
+
+<section class="wise" id="wise">
+  <div class="section-inner">
+    <h2 class="section-heading">Paying via Wise</h2>
+    <p class="section-intro">We accept payments through Wise — a trusted global payment service offering low fees and real exchange rates for international transfers. Sign up or log in at <a href="https://wise.com" target="_blank">wise.com</a> or use the Wise app, then use the details below.</p>
+    <div class="wise-grid">
+      <div class="wise-card">
+        <h4>GBP Payments</h4>
+        <table><tr><td>Account holder</td><td>Linda Kelly</td></tr><tr><td>Sort code</td><td>23-08-01</td></tr><tr><td>Account number</td><td>83908895</td></tr><tr><td>IBAN</td><td>GB30 TRWI 2308 0183 9088 95</td></tr><tr><td>Bank</td><td>Wise Payments Limited, 56 Shoreditch High Street, London E1 6JJ</td></tr></table>
+      </div>
+      <div class="wise-card">
+        <h4>USD Payments</h4>
+        <p style="font-size:0.82rem;color:var(--muted);margin-top:0.5rem;">USD payment details coming soon. Please <a href="#" onclick="showPage('contact');return false;">contact us</a> to arrange USD payment in the meantime.</p>
+      </div>
+      <div class="wise-card">
+        <h4>EUR Payments</h4>
+        <table><tr><td>Account holder</td><td>Linda Kelly</td></tr><tr><td>BIC</td><td>TRWIBEB1XXX</td></tr><tr><td>IBAN</td><td>BE63 9050 6279 7908</td></tr><tr><td>Bank</td><td>Wise, Rue du Trône 100, 3rd floor, Brussels 1050, Belgium</td></tr></table>
+      </div>
+      <div class="wise-card">
+        <h4>AUD Payments</h4>
+        <table><tr><td>Account holder</td><td>Linda Kelly</td></tr><tr><td>BSB code</td><td>774001</td></tr><tr><td>Account number</td><td>222430371</td></tr></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="other-links">
+  <div class="section-inner">
+    <h2 class="section-heading">Also From Paul Hunt</h2>
+    <div class="links-grid">
+      <a href="https://mathstrumps.weebly.com" target="_blank" class="link-card">
+        <h4>Maths Trumps</h4>
+        <p>A brilliant educational card game that makes learning maths genuinely fun. Winner of Theo Paphitis's #SBS Award.</p>
+      </a>
+      <a href="https://globalmathstutor.weebly.com" target="_blank" class="link-card">
+        <h4>The Global Maths Tutor</h4>
+        <p>Tailored 1-to-1 online maths tutoring for KS3, GCSE and A-Level students worldwide.</p>
+      </a>
+      <a href="free-sample.pptx" download class="link-card">
+        <h4>Free Sample Presentation</h4>
+        <p>Try before you buy — download a free sample presentation from the A-Level Mathematics specification.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div><!-- end page-main -->
+
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<div id="page-testimonials" class="tfm-page" style="display:none;">
+  <div style="max-width:900px;margin:0 auto;padding:3rem 2rem;">
+    <h2 style="font-family:'Merriweather',serif;font-size:1.5rem;color:var(--blue);margin-bottom:2rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold);display:inline-block;">What 'Teach Further Maths' users have said...</h2>
+
+    <div style="display:flex;flex-direction:column;gap:1.25rem;">
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"I wanted to thank you for the excellent CD of resources that I recently purchased. I have only recently begun teaching Pure Further Maths and the resources are immaculately designed."</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"Most powerful resource package I have ever seen and used in my entire 10 years of teaching Further Maths / A Level Maths. The package is a MUST to anyone looking to have a virtual assistant in teaching and/or learning Further Maths. Not only will students enjoy the quality of graphics and key teaching points, teachers too will find this resource invaluable. I strongly recommend this resource package to every Further Maths teacher and any A level Maths / Further Maths student wanting to have an A+ in their exam. Well done, P. A. Hunt!"</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"An excellent resource for teaching further mathematics. These PowerPoints are well presented, colourful and popular with students and teacher alike. As other reviewers have noted, there is a dearth of this type of material on the internet — if you teach or tutor further mathematics, do yourself a favour and get your hands on a copy of 'Teach Further Mathematics'!"</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"These PowerPoints look great and students should really benefit from them. Highly recommended."</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"Absolutely delighted with this. It covers everything in the AQA syllabus and looks amazing. My lessons are transformed. Thank you so much."</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"I've searched extensively for A-Level Maths resources, and this set of PowerPoints far surpasses anything else I have previously seen. The content is excellent, appropriately pitched for the students, and it looks great too. Without hesitation, I would highly recommend 'Teach Further Maths' to anyone teaching A-Level Further Maths."</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"These PowerPoints are very attractive, colourful and cover most of the A-Level Further Mathematics. They have a lot of well-presented details and questions from past papers. They are worth a lot."</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"These are an excellent set of PowerPoints! They are student friendly and should be in every school in the UK. They cover content for A Level Further Maths and are not only well detailed but very colourful too! They can be used for flipped teaching and will certainly make your lessons more engaging."</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"This is absolutely brilliant!"</p>
+      </div>
+
+      <div style="background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.25rem 1.5rem;">
+        <p style="font-family:'Merriweather',serif;font-style:italic;color:var(--ink);font-size:0.95rem;line-height:1.75;">"I have to admit that I was a little sceptical about purchasing a product without seeing any reviews yet, but I am so pleased with this, and it was well worth the money. I have scoured the internet many times in search of quality PowerPoints for teaching A-Level Further Mathematics, but have had little success — until now! This beats anything else I have found previously. The presentations themselves look great, and they have certainly transformed my lessons. Everything is clear, colourful and well presented. My students have appreciated it too. I think anyone who teaches further maths should seriously consider 'Teach Further Maths' — a great teaching tool."</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FAQs ═══════════ -->
+<div id="page-faqs" class="tfm-page" style="display:none;">
+  <div style="max-width:900px;margin:0 auto;padding:3rem 2rem;">
+    <h2 style="font-family:'Merriweather',serif;font-size:1.5rem;color:var(--blue);margin-bottom:2rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold);display:inline-block;">Frequently Asked Questions</h2>
+
+    <div style="margin-bottom:2rem;">
+      <h3 style="font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:0.75rem;">What software do I need to use 'Teach Further Maths'?</h3>
+      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:0.75rem;">To use all features of the presentations, including any interactive features, you should use <strong>PowerPoint 2007 or later</strong>.</p>
+      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;">I would also suggest (although it isn't essential) that you install <a href="http://www.dessci.com/en/products/MathType/default.htm" target="_blank" style="color:var(--blue);">MathType</a>, which is the equation editor used to write the presentations. Installing MathType will ensure that all equations are displayed correctly and will also give you the power to edit equations in the presentations should you wish to do so. After using the trial version for 30 days, it will revert to MathType Lite, which is still free and highly functional.</p>
+    </div>
+
+    <div style="margin-bottom:2rem;">
+      <h3 style="font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:0.75rem;">What if I have an older version of PowerPoint?</h3>
+      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:0.75rem;">If you are using PowerPoint 2003 or earlier, some presentations may lose their fluency and some features (e.g. certain animations) may not function at all. Fluency can also be lost if you are running the presentations on an old or slow computer.</p>
+      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;">An excellent tool which improves compatibility is the <a href="http://www.microsoft.com/en-us/download/details.aspx?id=3" target="_blank" style="color:var(--blue);">Microsoft Office Compatibility Pack</a> — free to install, it allows you to view and edit presentations created in newer versions of PowerPoint.</p>
+    </div>
+
+    <div style="margin-bottom:2rem;">
+      <h3 style="font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:0.75rem;">What if I don't have any version of PowerPoint?</h3>
+      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;">You can still use the presentations! <a href="http://www.microsoft.com/en-us/download/details.aspx?id=13" target="_blank" style="color:var(--blue);">PowerPoint Viewer</a> is a free tool that allows you to view fully-featured PowerPoint presentations without PowerPoint installed. It plays presentations flawlessly, although any interactive features or web links will be disabled.</p>
+    </div>
+
+    <div style="margin-bottom:2rem;">
+      <h3 style="font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:0.75rem;">What if I find any errors or omissions in the presentations?</h3>
+      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;">Please <a href="#" onclick="showPage('contact');return false;" style="color:var(--blue);">contact us</a> if you come across any errors or omissions. We will be very grateful for any comments or suggestions, and will be more than happy to make any necessary amendments and send you replacement presentations without fuss.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<div id="page-contact" class="tfm-page" style="display:none;">
+  <div style="max-width:900px;margin:0 auto;padding:3rem 2rem;">
+    <h2 style="font-family:'Merriweather',serif;font-size:1.5rem;color:var(--blue);margin-bottom:2rem;padding-bottom:0.5rem;border-bottom:2px solid var(--gold);display:inline-block;">Contact</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;">
+      <div>
+        <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:1rem;">For queries related to purchasing, licensing etc., please contact:</p>
+        <p style="color:var(--blue);font-weight:700;font-size:0.95rem;margin-bottom:0.25rem;">Linda Kelly</p>
+        <p style="color:var(--muted);font-size:0.9rem;margin-bottom:0.25rem;">Director, Smart Solutions Educational Products</p>
+        <p style="margin-bottom:1.5rem;font-size:0.9rem;"><a href="mailto:smartsolutions@europe.com" style="color:var(--blue);">smartsolutions@europe.com</a></p>
+        <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:1rem;">For specific queries about the presentations, contact the author directly:</p>
+        <p style="color:var(--blue);font-weight:700;font-size:0.95rem;margin-bottom:0.25rem;">Paul Hunt</p>
+        <p style="font-size:0.9rem;"><a href="mailto:PAHunt@teachers.org" style="color:var(--blue);">PAHunt@teachers.org</a></p>
+      </div>
+      <div>
+        <form onsubmit="handleSubmit(event)" style="display:flex;flex-direction:column;gap:0.85rem;">
+          <div style="display:flex;flex-direction:column;gap:0.3rem;">
+            <label style="font-size:0.78rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:0.04em;">Your name</label>
+            <input type="text" placeholder="e.g. Jane Smith" required style="border:1px solid var(--border);border-radius:4px;padding:0.6rem 0.8rem;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;outline:none;">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.3rem;">
+            <label style="font-size:0.78rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:0.04em;">Email address</label>
+            <input type="email" placeholder="jane@example.com" required style="border:1px solid var(--border);border-radius:4px;padding:0.6rem 0.8rem;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;outline:none;">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.3rem;">
+            <label style="font-size:0.78rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:0.04em;">Message</label>
+            <textarea rows="5" placeholder="Your query..." style="border:1px solid var(--border);border-radius:4px;padding:0.6rem 0.8rem;font-family:'Source Sans 3',sans-serif;font-size:0.9rem;outline:none;resize:vertical;"></textarea>
+          </div>
+          <button type="submit" style="background:var(--blue);color:white;border:none;padding:0.75rem 1.75rem;border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.95rem;font-weight:700;cursor:pointer;align-self:flex-start;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="footer-logo">Teach Further Maths · Paul Hunt</span>
+  <div class="footer-social">
+    <a href="https://twitter.com/TeachFMaths" target="_blank">Twitter / X</a>
+    <a href="https://www.youtube.com/watch?v=k8VE9mNm6j0" target="_blank">YouTube</a>
+    <a href="#" onclick="showPage('faqs');return false;">FAQs</a>
+    <a href="#" onclick="showPage('contact');return false;">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 Teach Further Maths · Paul Hunt. All rights reserved.</p>
+</footer>
+
+
+<script>
+function showPage(page) {
+  document.querySelectorAll('.tfm-page').forEach(function(p) {
+    p.style.display = 'none';
+    p.classList.remove('active');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a) {
+    a.classList.remove('active');
+  });
+  var el = document.getElementById('page-' + page);
+  if (el) { el.style.display = 'block'; el.classList.add('active'); }
+  var nav = document.getElementById('nav-' + page);
+  if (nav) nav.classList.add('active');
+  window.scrollTo(0, 0);
+}
+function handleSubmit(e) {
+  e.preventDefault();
+  var btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = 'Message sent ✓';
+  btn.style.background = '#2a6e3f';
+  btn.disabled = true;
+}
+</script>
+
+
+
+<div id="lb" onclick="this.style.display='none'">
+  <span id="lb-close" onclick="document.getElementById('lb').style.display='none'">&#215;</span>
+  <img id="lb-img" src="" onclick="event.stopPropagation()">
+</div>
+<script>
+document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lb').style.display='none';});
+</script>
+</body>
+</html>
